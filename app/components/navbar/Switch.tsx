@@ -1,7 +1,6 @@
 'use client'
 
 import { useTheme } from "next-themes"
-import Button from "../Button";
 
 import { RiMoonFill, RiSunLine } from "react-icons/ri"
 

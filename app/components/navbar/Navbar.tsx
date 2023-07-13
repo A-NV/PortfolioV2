@@ -6,6 +6,9 @@ import Container from "../Container";
 import Logo from "./Logo";
 import UserMenu from "./UserMenu";
 import Switch from "./Switch";
+import Link from "next/link";
+import useNavModal from "@/app/hooks/useNavModal";
+
 
 
 interface NavItem {
@@ -29,8 +32,9 @@ const NAV_ITEMS: Array<NavItem> = [
 ];
 
 const Navbar = () => {
+  const navbarModal = useNavModal();
   const [navbar, setNavbar] = useState(false);
-
+  
   return ( 
   <div className="fixed w-full z-10 shadow-md">
     <div
@@ -49,17 +53,25 @@ const Navbar = () => {
           "
           >
             <Logo />
-            <UserMenu/>
 
-            
+            <button
+              onClick={navbarModal.onOpen}
+            >
+                <UserMenu/>
+            </button>
+          
+
             <div
-              className={`
+              className="
                 flex-1 
                 justify-self-center 
                 pb-3 
                 mt-8 
-                ${navbar ? "" : "hidden"}
-              `}
+                mt:block
+                md:pb-0
+                md:mt-0
+                max-md:hidden
+              "
             >
               <div
                 className="
@@ -74,11 +86,10 @@ const Navbar = () => {
               >
               
                {NAV_ITEMS.map((item, idx) => {
-                return <a key={idx}>{item.label}</a>
+                return <Link key={idx} href={""}>{item.label}</Link>
                })}
 
                <Switch/>
-              
               </div>
             </div>
         </div>
