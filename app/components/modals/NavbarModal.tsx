@@ -3,7 +3,7 @@
 import useNavModal from "@/app/hooks/useNavModal";
 import Modal from "./Modal";
 import Switch from "../navbar/Switch";
-import Link from "next/link";
+import {Link } from "react-scroll";
 
 interface NavItem {
   label: string
@@ -23,13 +23,17 @@ const NavbarModal: React.FC<NavItem> = () => {
       page: "about",
     },
     {
+      label: "Skills",
+      page: "skills",
+    },
+    {
       label: "Projects",
       page: "projects",
     }
   ];
 
   let bodyContent = (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8 ">
       <div 
         className="
         flex 
@@ -38,9 +42,25 @@ const NavbarModal: React.FC<NavItem> = () => {
         space-y-8
         "
         >
-          {NAV_ITEMS.map((item, idx) => {
-                    return <Link key={idx} href={""}>{item.label}</Link>
-                  })}
+              {NAV_ITEMS.map((item, idx) => {
+                return (
+                  <Link 
+                    onClick={navbarModal.onClose}
+                    key={idx} 
+                    to={item.page}
+                      className="
+                        cursor-pointer
+                        "
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={500}
+                    >
+                      {item.label}
+                  </Link>
+                )
+               })}
 
           <Switch/>
       </div>

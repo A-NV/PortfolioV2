@@ -1,12 +1,10 @@
 'use client'
 
-import { useState } from "react";
-
 import Container from "../Container";
 import Logo from "./Logo";
 import UserMenu from "./UserMenu";
 import Switch from "./Switch";
-import Link from "next/link";
+import {Link } from "react-scroll";
 import useNavModal from "@/app/hooks/useNavModal";
 
 
@@ -26,6 +24,10 @@ const NAV_ITEMS: Array<NavItem> = [
     page: "about",
   },
   {
+    label: "Skills",
+    page: "skills",
+  },
+  {
     label: "Projects",
     page: "projects",
   }
@@ -33,10 +35,9 @@ const NAV_ITEMS: Array<NavItem> = [
 
 const Navbar = () => {
   const navbarModal = useNavModal();
-  const [navbar, setNavbar] = useState(false);
   
   return ( 
-  <div className="fixed w-full z-10 shadow-md">
+  <div className="fixed w-full top-0 z-10 shadow-md bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
     <div
       className="
         py-4
@@ -70,8 +71,7 @@ const Navbar = () => {
                 mt:block
                 md:pb-0
                 md:mt-0
-                max-md:hidden
-              "
+                max-md:hidden              "
             >
               <div
                 className="
@@ -85,8 +85,23 @@ const Navbar = () => {
                 "
               >
               
-               {NAV_ITEMS.map((item, idx) => {
-                return <Link key={idx} href={""}>{item.label}</Link>
+              {NAV_ITEMS.map((item, idx) => {
+                return (
+                  <Link 
+                    key={idx} 
+                    to={item.page}
+                      className="
+                        cursor-pointer
+                        "
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={500}
+                    >
+                      {item.label}
+                  </Link>
+                )
                })}
 
                <Switch/>
