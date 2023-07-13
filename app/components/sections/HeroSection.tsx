@@ -47,9 +47,8 @@ const HeroSection = () => {
 
             <Text
             center
-              text="I'm a Front-End Developer based in Sydney, AU. Working towards 
-              creating software that makes life easier and more meaning."
-              />
+              text="I'm a Front-End Developer based in Sydney, NSW. I build & design software things that makes life easier and more meaningful."
+            />
               
             <div 
               className="
@@ -69,7 +68,10 @@ const HeroSection = () => {
                 rounded
                 shadow
               hover:bg-teal-700
+                hover:scale-110
+                transition
                 text-center
+                cursor-pointer
                 "
                 activeClass="active"
                 spy={true}
@@ -83,7 +85,6 @@ const HeroSection = () => {
         </div>
       </div>
       
-
       <div 
         className="
           flex

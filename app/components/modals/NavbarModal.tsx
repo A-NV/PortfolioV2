@@ -24,7 +24,7 @@ const NavbarModal: React.FC<NavItem> = () => {
     },
     {
       label: "Skills",
-      page: "skills",
+      page: "page",
     },
     {
       label: "Projects",
