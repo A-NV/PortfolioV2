@@ -3,6 +3,7 @@ import {
   AiOutlineGithub,
   AiOutlineLinkedin,
 } from "react-icons/ai"
+import Text from "../Text";
 
 
 const Footer = () => {
@@ -23,6 +24,10 @@ const Footer = () => {
           © 2023 Anthony Neav<a href="/" className="hover:underline"></a>
         </div>
         <div className="flex flex-row items-center justify-center space-x-2 mb-1">
+          <div className="flex flex-row items-center justify-center space-x-1 text-neutral-500 dark:text-neutral-100">
+            Stay in touch! <a href="/" className="hover:underline"></a>
+          </div>
+       
           <a href="https://github.com/A-NV" rel="noreferrer" target="_blank">
             <AiOutlineGithub
               className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"

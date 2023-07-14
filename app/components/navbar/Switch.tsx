@@ -21,7 +21,7 @@ const Switch = () => {
         >
           <RiSunLine 
             size={25}
-            color="#06b6d4"
+            color="#fb923c"
           />
         </button>
       ) : (

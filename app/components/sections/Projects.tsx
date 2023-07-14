@@ -9,6 +9,17 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 const projects = [
   {
     name: "StayZen",
+    skills: [
+      { skill: "HTML" },
+      { skill: "CSS" },
+      { skill: "TypeScript" },
+      { skill: "React" },
+      { skill: "Next.js" },
+      { skill: "Tailwind CSS" },
+      { skill: "Git" },
+      { skill: "MongoDB" },
+      { skill: "Prisma" },
+    ],
     description: 
       "Stayzen is a sleek and user-friendly website offering a wide range of accommodations worldwide. With its modern design and intuitive interface, users can easily explore and book their ideal stays. The visually appealing homepage showcases destination images, while the streamlined navigation makes searching effortless. Stayzen provides a seamless booking process and an engaging system interface, ensuring an enjoyable user experience.",
     image: "/images/stayzen.png",
@@ -55,10 +66,44 @@ const Projects = () => {
                   </div>
                   <div className="mt-8 md:w-1/2">
                     <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
-                    <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+                    <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-300">
                       {project.description}
                     </p>
-                    <div className="flex flex-row align-bottom space-x-4">
+                    <div 
+                      className="
+                        flex
+                        flex-wrap
+                        justify-start
+                        lg:justify-start
+                        md:gap-2
+                        
+                      "
+                      >
+
+                        {project.skills.map((items, idx) => {
+                          return (
+                            <div
+                              key={idx}
+                              className="
+                                flex
+                                bg-gray-200 
+                                px-5
+                                py-2
+                                mr-2
+                                mt-2
+                                text-gray-500
+                                rounded-sm
+                                items-center
+                                justify-center
+                              "
+                            >
+                              {items.skill}
+                            </div>
+                          )
+                        })}
+                      </div>
+
+                    <div className="flex flex-row align-bottom space-x-4 mt-4">
                       <Link href={project.github} target="_blank">
                         <BsGithub
                           size={30}

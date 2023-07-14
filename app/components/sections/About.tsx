@@ -43,20 +43,22 @@ const AboutSection = () => {
       <div 
         className="
           flex
-          max-lg:flex-col
-          md:flex-col
+          flex-col
+          space-y-20
+          lg:space-x-10
+          lg:space-y-0
+          lg:flex-row
         "
       >
         <div
           className="
-            flex
-            md:w-[100%]
+          md:w-[100%]
+          lg:w-[120%]
           "
         >
         <Text
-          center
           text="Front End Developer currently studying Bachelor of Commerce in Information Systems and Finance. I am a dedicated, open-minded person, developing professional skills, constantly adapting and learning to new things all the time. Currently learning React, Tailwind CSS to further deepen my knowledge in front-end development. In the distant future, I will be learning MySQL.
-          Constantly broadening my knowledge of the Node.js and React ecosystem. Since then, I fell in love with & have primarily using React & Typescript in web applications with Next.js 13 app router small and large projects. 
+          Constantly broadening my knowledge of the Node.js and React ecosystem. Since then, I fell in love with & have primarily using React & Typescript in web applications with Next.js 13 app router small and big projects. 
           "
         />
 
@@ -68,8 +70,9 @@ const AboutSection = () => {
         className="
           flex
           flex-wrap
-          md:justify-center-start
-          md:gap-1
+          justify-start
+          lg:justify-start
+          md:gap-2
         "
         >
 
@@ -79,17 +82,15 @@ const AboutSection = () => {
                 key={idx}
                 className="
                   flex
-                  bg-slate-800 
-                  dark:bg-white
+                  bg-gray-200 
                   px-5
                   py-2
                   mr-2
-                  mt-10
-                  text-white
-                  dark:text-black
-                  rounded-[25px]
-                  font-sans
+                  mt-2
+                  text-gray-500
+                  rounded-sm
                   items-center
+                  justify-center
                 "
               >
                 {items.skill}

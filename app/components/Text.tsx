@@ -11,7 +11,7 @@ const Text: React.FC<TextProps> = ({
 }) => {
   return ( 
     <div className={center ? "text-center" : "text-start"}>
-      <div className="font-normal mt-2 md:text-left md:text-lg">
+      <div className="text-xl mt-2 md:text-left md:text-lg text-neutral-600 dark:text-neutral-300">
         {text}
       </div>
     </div>
