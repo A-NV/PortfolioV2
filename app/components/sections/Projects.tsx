@@ -23,8 +23,8 @@ const projects = [
     description: 
       "Stayzen is a sleek and user-friendly website offering a wide range of accommodations worldwide. With its modern design and intuitive interface, users can easily explore and book their ideal stays. The visually appealing homepage showcases destination images, while the streamlined navigation makes searching effortless. Stayzen provides a seamless booking process and an engaging system interface, ensuring an enjoyable user experience.",
     image: "/images/StayZen2.png",
-    github: "https://github.com/A-NV/Airbnb-Clone-",
-    link: "https://stayzen-bx87qz78f-a-nv.vercel.app"
+    github: "https://github.com/A-NV/StayZen",
+    link: "https://stayzen-swart.vercel.app/"
   }
 ]
 
