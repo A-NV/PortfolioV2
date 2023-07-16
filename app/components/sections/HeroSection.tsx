@@ -40,6 +40,12 @@ const HeroSection = () => {
               
             "
           >
+<<<<<<< HEAD
+=======
+            <p className="uppercase text-sm tracking-widest text-gray-600 text-center pt-10 dark:text-gray-200">
+              LET&apos;S BUILD SOMETHING LEGENDARY TOGETHER
+            </p>
+>>>>>>> d85df68 (UPDATE: HEROSECTION + MINOR BUG)
             <Heading
               center
               title="Hi, I'm Anthony!"
