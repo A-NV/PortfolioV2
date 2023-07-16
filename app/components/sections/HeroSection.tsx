@@ -1,11 +1,11 @@
 'use client'
 
 import {Link } from "react-scroll";
-import Image from "next/image";
+
 import Heading from "../Heading";
 import { HiArrowDown } from "react-icons/hi"
 import Container from "../Container";
-import Text from "../Text";
+
 
 
 const HeroSection = () => {
@@ -27,34 +27,29 @@ const HeroSection = () => {
           md:py-35
         "
       >
-          <Image
-            className="rounded-full"
-            src={"/images/placeholder.jpg"}
-            alt=""
-            width={300}
-            height={300}
-          />
-
           <div
             className="
               
             "
           >
-<<<<<<< HEAD
-=======
-            <p className="uppercase text-sm tracking-widest text-gray-600 text-center pt-10 dark:text-gray-200">
+            <p className="uppercase text-md tracking-widest text-gray-600 text-center pt-10 dark:text-gray-200">
               LET&apos;S BUILD SOMETHING LEGENDARY TOGETHER
             </p>
->>>>>>> d85df68 (UPDATE: HEROSECTION + MINOR BUG)
+
             <Heading
               center
               title="Hi, I'm Anthony!"
               />
 
-            <Text
-            center
-              text="I'm a Front-End Developer based in Sydney, NSW. I build & design software things that makes life easier and more meaningful."
-            />
+            
+            <p className="text-lg tracking-widest text-gray-600 text-center pt-5 dark:text-gray-200">
+            I'm a Front-End Developer based in Sydney, NSW.
+            </p>
+              
+
+            <p className="text-lg tracking-widest text-gray-600 text-center dark:text-gray-200">
+            I build & design software things that makes life easier and more meaningful.
+            </p>
               
             <div 
               className="
