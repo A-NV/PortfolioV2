@@ -12,11 +12,6 @@ const font = Nunito ({
   subsets: ["latin"],
 })
 
-export const metadata = {
-  title: 'Portfilo',
-  description: 'Personal Website',
-}
-
 export default function RootLayout({
   children,
 }: {
