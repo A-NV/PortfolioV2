@@ -8,7 +8,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        accent: {
+          1: "hsl(288 95.8% 90.6%)",
+          2: "hsl(168 88.8% 58.2%)",
+        },
+        bkg: "hsl(210 40% 98%)",
+        content: "hsl(217 32.6% 17.5%)",
+      },
       animation: {
+        "spin-slower": "spin 35s ease infinite",
+        "spin-slow": "spin 25s ease-in-out infinite reverse",
         fadeIn: "fadeIn 1.5s",
         bounce:
           "bounce 0.5s alternate cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite",

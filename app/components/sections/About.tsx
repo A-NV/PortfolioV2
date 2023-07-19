@@ -20,10 +20,7 @@ const AboutSection = () => {
   return ( 
     <section id="about">
     <Container>
-      <div 
-        className="
-        "
-      >
+      <div>
         <Heading
           center
           title="About Me"
@@ -39,7 +36,6 @@ const AboutSection = () => {
         "
         >
       </hr>
-
       <div 
         className="
           flex
@@ -53,19 +49,15 @@ const AboutSection = () => {
         <div
           className="
           md:w-[100%]
-          lg:w-[120%]
+          lg:w-[140%]
           "
         >
-        <Text
-          text="Front End Developer currently studying Bachelor of Commerce in Information Systems and Finance. I am a dedicated, open-minded person, developing professional skills, constantly adapting and learning to new things all the time. Currently learning React, Tailwind CSS to further deepen my knowledge in front-end development. In the distant future, I will be learning MySQL.
+        <p>
+          Front End Developer currently studying Bachelor of Commerce in Information Systems and Finance. I am a dedicated, open-minded person, developing professional skills, constantly adapting and learning to new things all the time. Currently learning React, Tailwind CSS to further deepen my knowledge in front-end development. In the distant future, I will be learning MySQL.
           Constantly broadening my knowledge of the Node.js and React ecosystem. Since then, I fell in love with & have primarily using React & Typescript in web applications with Next.js 13 app router small and big projects. 
-          "
-        />
+          </p>
 
-        </div>
-      
-
-
+        </div>  
         <div 
         className="
           flex
@@ -73,6 +65,7 @@ const AboutSection = () => {
           justify-start
           lg:justify-start
           md:gap-2
+          md:space-x-0
         "
         >
 
@@ -86,22 +79,22 @@ const AboutSection = () => {
                   px-5
                   py-2
                   mr-2
-                  mt-2
-                  text-gray-500
+                  max-md:mt-2
+                text-gray-500
                   rounded-sm
                   items-center
                   justify-center
+                  max-h-10
+                  
                 "
               >
                 {items.skill}
               </div>
             )
           })}
-        </div>
-    
-    
-        </div>
+        </div>   
       </div>
+    </div>
 
     </Container>
     </section>

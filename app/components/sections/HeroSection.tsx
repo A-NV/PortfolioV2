@@ -4,6 +4,7 @@ import {Link } from "react-scroll";
 
 import Heading from "../Heading";
 import { HiArrowDown } from "react-icons/hi"
+import { MdKeyboardArrowRight } from "react-icons/md"
 import Container from "../Container";
 
 
@@ -14,6 +15,7 @@ const HeroSection = () => {
     <Container>
       <div 
         className="
+         overflow-hidden
           flex 
           flex-col
           items-center
@@ -29,7 +31,7 @@ const HeroSection = () => {
       >
           <div
             className="
-              
+            before:absolute before:h-1/2 before:w-3/4 before:rounded-tr-full before:rounded-bl-full before:blur-3xl before:bg-accent-2/40 before:animate-spin-slower before:-z-10 after:absolute after:h-2/3 after:w-2/3 after:rounded-tr-full after:rounded-bl-full after:blur-3xl after:bg-accent-1/40 after:animate-spin-slow after:-z-10 
             "
           >
             <p className="uppercase text-md tracking-widest text-gray-600 text-center pt-10 dark:text-gray-200">
@@ -61,17 +63,17 @@ const HeroSection = () => {
             <Link
               to="projects"
               className="
+                group
+                flex
+                items-center
               text-neutral-100
-                font-semibold
                 px-6
                 py-3
-              bg-teal-600
+                bg-gradient-to-r from-cyan-500 to-blue-500
                 rounded
                 shadow
-              hover:bg-teal-700
                 hover:scale-110
                 transition
-                text-center
                 cursor-pointer
                 "
                 activeClass="active"
@@ -81,6 +83,11 @@ const HeroSection = () => {
                 duration={500}
                 >
                   Projects
+                  
+                  <MdKeyboardArrowRight
+                    size={20}
+                    className="mt-0.5 group-hover:rotate-90 duration-300 "
+                  />
               </Link>
           </div>
         </div>
