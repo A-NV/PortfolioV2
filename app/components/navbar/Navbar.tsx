@@ -37,11 +37,10 @@ const Navbar = () => {
   const navbarModal = useNavModal();
   
   return ( 
-  <div className="fixed w-full top-0 z-10 shadow-md bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
+  <div className="fixed w-full top-0 z-10 shadow-md bg-white dark:bg-[rgb(36,36,36,36)] dark:border-b dark:border-stone-600">
     <div
       className="
-        py-4
-        border-b-[1px]
+        py-2
       "
     >
       <Container>
@@ -50,7 +49,7 @@ const Navbar = () => {
             flex
             items-center
             justify-between
-            py-3
+            py-2
           "
           >
             <Logo />
@@ -81,7 +80,7 @@ const Navbar = () => {
                   justify-end
                   gap-3
                   md:gap-0
-                  md:space-x-6
+                  md:space-x-3
                 "
               >
               
@@ -92,6 +91,13 @@ const Navbar = () => {
                     to={item.page}
                       className="
                         cursor-pointer
+                        px-4
+                        py-1
+                        rounded-full
+                        hover:bg-gray-300
+                        transition
+                        ease-in-out
+                        duration-300
                         "
                     activeClass="active"
                     spy={true}

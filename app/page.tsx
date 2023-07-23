@@ -7,9 +7,19 @@ export default function Home() {
   return (     
     <main>
       <Container>
-        <HeroSection />
-        <About />
-        <Projects/>
+
+        <section id="home" className="snap-center">
+          <HeroSection />
+        </section>
+
+        <section id="about" className="snap-center">
+          <About />
+        </section>
+
+        <section id="projects" className="snap-center">
+          <Projects/>
+        </section>
+
       </Container>
     </main>
   )

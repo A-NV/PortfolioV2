@@ -19,11 +19,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-     <body className={font.className}>
+    <body className={`dark:bg-[rgb(36,36,36,36)] ${font.className}`}>
       <ThemeProvider enableSystem={true} attribute="class">
         <NavbarModal label={''} page={''}/>
         <Navbar /> 
-        <div className="pb-20 pt-28 ">
+        <div>
           {children}
         </div>
         <Footer/>

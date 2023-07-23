@@ -25,12 +25,29 @@ const projects = [
     image: "/images/StayZen2.png",
     github: "https://github.com/A-NV/StayZen",
     link: "https://stayzen-swart.vercel.app/"
+  },
+  {
+    name: "Dynamic Weather",
+    skills: [
+      { skill: "StepZen" },
+      { skill: "GraphQL" },
+      { skill: "TypeScript" },
+      { skill: "React" },
+      { skill: "Next.js" },
+      { skill: "Tailwind CSS" },
+      { skill: "Git" },
+      { skill: "Tremor 2.0" },
+    ],
+    description: 
+      "Dynamic Weather is a cutting-edge web app that seamlessly presents real-time weather data on a visually captivating and user-friendly UI. Stay informed about current and upcoming weather conditions with ease, whether for outfit choices, outdoor activities, or travel plans. Embrace the future of weather data visualization and make Dynamic Weather your go-to weather companion for accurate information and an engaging experience. Say goodbye to dull weather apps and welcome a new level of weather data interaction.",
+    image: "/images/DynamicWeather.png",
+    github: "https://github.com/A-NV/DynamicWeather_2.0",
+    link: "https://dynamic-weather-one.vercel.app/"
   }
 ]
 
 const Projects = () => {
   return ( 
-    <section id="projects">
     <Container>
       <Heading
         center
@@ -126,7 +143,7 @@ const Projects = () => {
         
       </div>
     </Container>
-    </section>
+
    );
 }
  

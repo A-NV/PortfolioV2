@@ -3,7 +3,6 @@ import {
   AiOutlineGithub,
   AiOutlineLinkedin,
 } from "react-icons/ai"
-import Text from "../Text";
 
 
 const Footer = () => {

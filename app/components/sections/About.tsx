@@ -1,6 +1,5 @@
 import Container from "../Container";
 import Heading from "../Heading";
-import Text from "../Text";
 
 const AboutSection = () => {
   const skills = [
@@ -15,12 +14,14 @@ const AboutSection = () => {
     { skill: "Git" },
     { skill: "Prisma" },
     { skill: "MongoDB" },
+    { skill: "StepZen" },
+    { skill: "Tremor 2.0" },
+    { skill: "GraphQL" },
   ]
   
   return ( 
-    <section id="about">
     <Container>
-      <div>
+      <div className="pb-40 pt-5">
         <Heading
           center
           title="About Me"
@@ -97,7 +98,6 @@ const AboutSection = () => {
     </div>
 
     </Container>
-    </section>
    );
 }
  
