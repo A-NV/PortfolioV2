@@ -2,7 +2,7 @@
 
 import {Link } from "react-scroll";
 
-import Heading from "../Heading";
+import Typewriter from 'typewriter-effect';
 import { HiArrowDown } from "react-icons/hi"
 import { MdKeyboardArrowRight } from "react-icons/md"
 import Container from "../Container";
@@ -11,38 +11,40 @@ import Container from "../Container";
 
 const HeroSection = () => {
   return ( 
-    <section id ="home">
+
     <Container>
       <div 
         className="
-         overflow-hidden
+          overflow-hidden
           flex 
           flex-col
           items-center
           justify-center
-          my-10
-          pt-32
           gap-5
-          md:flex-row
           md:space-x-10
           md:mt-2
-          md:py-35
+          md:pt-35
+          h-screen
         "
       >
           <div
             className="
-            before:absolute before:h-1/2 before:w-3/4 before:rounded-tr-full before:rounded-bl-full before:blur-3xl before:bg-accent-2/40 before:animate-spin-slower before:-z-10 after:absolute after:h-2/3 after:w-2/3 after:rounded-tr-full after:rounded-bl-full after:blur-3xl after:bg-accent-1/40 after:animate-spin-slow after:-z-10 
+            before:absolute before:h-1/2 before:w-1/2 before:rounded-tr-full before:rounded-bl-full before:blur-3xl before:bg-accent-2/40 before:animate-spin-slower before:-z-10 after:absolute after:h-1/2 after:w-1/3 after:rounded-tr-full after:rounded-bl-full after:blur-3xl after:bg-accent-1/40 after:animate-spin-slow after:-z-10 
             "
           >
             <p className="uppercase text-md tracking-widest text-gray-600 text-center pt-10 dark:text-gray-200">
               LET&apos;S BUILD SOMETHING LEGENDARY TOGETHER
             </p>
 
-            <Heading
-              center
-              title="Hi, I'm Anthony!"
-              />
-
+          <div className="flex font-sans text-2xl font-semibold tracking-widest pt-20 pb-5 md:text-3xl items-center justify-center ">
+            <Typewriter
+              options={{
+                strings: ["Hi, the name's Anthony Neav", "< Crt+C, Crt+V />"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </div>
             
             <p className="text-lg tracking-widest text-gray-600 text-center pt-5 dark:text-gray-200">
             I&apos;m a Front-End Developer based in Sydney, NSW.
@@ -91,13 +93,14 @@ const HeroSection = () => {
               </Link>
           </div>
         </div>
-      </div>
+      
       
       <div 
         className="
           flex
-          flex-row
+          items-center
           justify-center
+          pt-5
         "
         >
           <Link
@@ -115,9 +118,9 @@ const HeroSection = () => {
             className="animate-bounce"
           /> 
       </div>
+      </div>
     </Container>
-    </section>
-   
+ 
    );
 }
  
