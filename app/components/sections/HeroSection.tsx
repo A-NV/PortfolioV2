@@ -45,14 +45,10 @@ const HeroSection = () => {
               }}
             />
           </div>
-            
-            <p className="text-lg tracking-widest text-gray-600 text-center pt-5 dark:text-gray-200">
-            
-            </p>
-              
+          
 
             <p className="text-lg tracking-widest text-gray-600 text-center dark:text-gray-200">
-            I build & design software things that makes life easier and more meaningful.
+            I build & design software things that makes life easier and for fun!!
             </p>
               
             <div 

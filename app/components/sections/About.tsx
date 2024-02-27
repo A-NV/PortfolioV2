@@ -53,8 +53,8 @@ const AboutSection = () => {
           lg:w-[140%]
           "
         >
-        <p>
-        Hey, I'm Anthony Neav. By day, I'm focused on tackling projects and staying grounded. When the sun sets, I shift gears to pursue my interests like gymnastics, running or swimming. I've got a knack for finding humor in everyday situations and appreciate a good, straightforward conversation. With a balanced outlook on life, I aim to make the most of every moment without getting too caught up in the hype. Let's connect and share some down-to-earth experiences.
+        <p>      
+        Hello, I&apos;m Anthony Neav. By day, you&apos;ll find me immersed, navigating through the challenges with a positive mindset. When the day winds down, I enjoy exploring books, gymnastics or running and finding simple joys in life. I&apos;m known for my kindness, and I believe in the power of genuine connections. Whether it&apos;s a thoughtful conversation or a shared laugh, I appreciate the beauty in the little things. Let&apos;s journey through life with kindness and authenticity, making each day a bit brighter for ourselves and those around us.
           </p>
 
         </div>  
