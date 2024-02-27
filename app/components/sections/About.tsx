@@ -54,8 +54,7 @@ const AboutSection = () => {
           "
         >
         <p>
-          Front End Developer currently studying Bachelor of Commerce in Information Systems and Finance. I am a dedicated, open-minded person, developing professional skills, constantly adapting and learning to new things all the time. Currently learning React, Tailwind CSS to further deepen my knowledge in front-end development. In the distant future, I will be learning MySQL.
-          Constantly broadening my knowledge of the Node.js and React ecosystem. Since then, I fell in love with & have primarily using React & Typescript in web applications with Next.js 13 app router small and big projects. 
+        Hey, I'm Anthony Neav. By day, I'm focused on tackling projects and staying grounded. When the sun sets, I shift gears to pursue my interests like gymnastics, running or swimming. I've got a knack for finding humor in everyday situations and appreciate a good, straightforward conversation. With a balanced outlook on life, I aim to make the most of every moment without getting too caught up in the hype. Let's connect and share some down-to-earth experiences.
           </p>
 
         </div>  

@@ -47,7 +47,7 @@ const HeroSection = () => {
           </div>
             
             <p className="text-lg tracking-widest text-gray-600 text-center pt-5 dark:text-gray-200">
-            I&apos;m a Front-End Developer based in Sydney, NSW.
+            
             </p>
               
 
